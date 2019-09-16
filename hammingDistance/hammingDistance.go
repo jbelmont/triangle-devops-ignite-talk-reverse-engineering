@@ -2,8 +2,6 @@ package hammingDistance
 
 import (
 	"errors"
-	"fmt"
-	"log"
 )
 
 func hammingDistance(x string, y string) (int, error) {
@@ -19,12 +17,4 @@ func hammingDistance(x string, y string) (int, error) {
 	}
 
 	return distance, nil
-}
-
-func main() {
-	dist, err := hammingDistance("karolin", "kathrin")
-	if err != nil {
-		log.Fatal(err)
-	}
-	fmt.Println(dist)
 }
